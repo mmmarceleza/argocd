@@ -1,0 +1,26 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: argocd-image-updater
+  namespace: argo-cd
+spec:
+  destination:
+    namespace: argo-cd
+    server: "https://kubernetes.default.svc"
+  source:
+    path: ""
+    repoURL: "https://argoproj.github.io/argo-helm"
+    targetRevision: 0.10.2
+    chart: argocd-image-updater
+    helm:
+      parameters:
+        - name: config.gitCommitMail
+          value: agorcd@example.com
+        - name: config.gitCommitUser
+          value: argocd
+  sources: []
+  project: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

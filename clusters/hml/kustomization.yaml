@@ -2,9 +2,11 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 resources:
-  []
   ## aplicações de infraestrutura
+  - "infra/argocd-image-updater"
   # - "infra/kyverno/kyverno-application.yaml"
+
   ## aplicações de negócio
+  #- "apps/simple-example"
   # - "apps/podinfo/podinfo-application.yaml"
   # - "apps/emojivoto/emojivoto-application.yaml"
