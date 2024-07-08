@@ -7,6 +7,6 @@ resources:
   # - "infra/kyverno/kyverno-application.yaml"
 
   ## aplicações de negócio
-  #- "apps/simple-example"
+  - "apps/simple-example/simple-example-application.yaml"
   # - "apps/podinfo/podinfo-application.yaml"
   # - "apps/emojivoto/emojivoto-application.yaml"
