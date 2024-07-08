@@ -3,10 +3,7 @@ kind: Kustomization
 
 resources:
   ## aplicações de infraestrutura
-  - "infra/argocd-image-updater/argocd-image-updater.yaml"
-  # - "infra/kyverno/kyverno-application.yaml"
+  - "infra/"
 
   ## aplicações de negócio
-  - "apps/simple-example/simple-example-application.yaml"
-  # - "apps/podinfo/podinfo-application.yaml"
-  # - "apps/emojivoto/emojivoto-application.yaml"
+  - "apps/"
