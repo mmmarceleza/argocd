@@ -5,7 +5,7 @@ metadata:
   namespace: argo-cd
 spec:
   destination:
-    namespace: simple-example
+    namespace: default
     server: "https://kubernetes.default.svc"
   source:
     path: clusters/hml/apps/simple-example/
