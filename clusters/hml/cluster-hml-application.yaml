@@ -1,8 +1,6 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  annotations:
-    argocd.argoproj.io/sync-wave: "1"
   name: cluster-hml
   namespace: argo-cd
 spec:
@@ -11,8 +9,8 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: clusters/ocp-hml
-    repoURL: https://github.com/mmmarceleza/openshift-iac
+    path: clusters/hml
+    repoURL: https://github.com/mmmarceleza/arogcd
     targetRevision: HEAD
   syncPolicy:
     automated:
