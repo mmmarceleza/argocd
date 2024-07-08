@@ -3,7 +3,7 @@ kind: Kustomization
 
 resources:
   ## aplicações de infraestrutura
-  - "infra/argocd-image-updater"
+  - "infra/argocd-image-updater/argocd-image-updater.yaml"
   # - "infra/kyverno/kyverno-application.yaml"
 
   ## aplicações de negócio
