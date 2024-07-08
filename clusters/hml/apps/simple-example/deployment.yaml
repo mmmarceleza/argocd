@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: nginx
+          image: mmmarceleza/app4:de28427-20240619201756
           ports:
             - containerPort: 80
