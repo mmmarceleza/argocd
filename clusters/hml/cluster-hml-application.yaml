@@ -10,7 +10,7 @@ spec:
   project: default
   source:
     path: clusters/hml
-    repoURL: https://github.com/mmmarceleza/arogcd
+    repoURL: https://github.com/mmmarceleza/argocd
     targetRevision: HEAD
   syncPolicy:
     automated:
