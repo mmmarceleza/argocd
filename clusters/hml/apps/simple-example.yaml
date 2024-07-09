@@ -15,7 +15,7 @@ spec:
     server: "https://kubernetes.default.svc"
   source:
     path: clusters/hml/apps/simple-example/
-    repoURL: "https://github.com/mmmarceleza/argocd"
+    repoURL: "ssh://git@github.com/mmmarceleza/argocd.git"
     targetRevision: HEAD
     directory:
       recurse: false
