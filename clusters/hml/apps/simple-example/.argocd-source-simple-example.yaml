@@ -1,3 +1,0 @@
-kustomize:
-  images:
-  - mmmarceleza/app4:0c8110a-20220505183115
