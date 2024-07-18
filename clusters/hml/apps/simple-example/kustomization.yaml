@@ -5,4 +5,4 @@ resources:
 - service.yaml
 images:
 - name: mmmarceleza/app4
-  newTag: de28427-20240710145941
+  newTag: de28427-20240718202648
