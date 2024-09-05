@@ -12,6 +12,10 @@ configs:
     timeout.reconciliation: 300s
     resource.compareoptions: |
       ignoreAggregatedRoles: true
+
+global:
+  domain: argocd.127-0-0-1.nip.io
+
 ## ApplicationSet controller
 applicationSet:
   {}
