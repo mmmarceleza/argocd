@@ -88,6 +88,12 @@ server:
   #   requests:
   #     cpu: 100m
   #     memory: 128Mi
+  ingress:
+    # -- Enable an ingress resource for the Argo CD server
+    enabled: true
+    # -- Defines which ingress controller will implement the resource
+    ingressClassName: "nginx"
+
 ## Notifications controller
 notifications:
   {}
