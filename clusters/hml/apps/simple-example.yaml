@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: simple-example
-  namespace: argo-cd
+  namespace: argo
   annotations:
     argocd-image-updater.argoproj.io/image-list: app4=mmmarceleza/app4
     argocd-image-updater.argoproj.io/write-back-method: git

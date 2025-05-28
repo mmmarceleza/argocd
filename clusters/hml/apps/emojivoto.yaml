@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: emojivoto
-  namespace: argo-cd
+  namespace: argo
 spec:
   destination:
     namespace: emojivoto

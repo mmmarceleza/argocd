@@ -2,10 +2,10 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: cluster-hml
-  namespace: argo-cd
+  namespace: argo
 spec:
   destination:
-    namespace: argo-cd
+    namespace: argo
     server: https://kubernetes.default.svc
   project: default
   source:

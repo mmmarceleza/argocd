@@ -5,8 +5,8 @@
 Instalação do Argo CD:
 
 ```bash
-helm upgrade --install argo-cd argo-cd \
-    -n argo-cd --create-namespace \
+helm upgrade --install argo argo-cd \
+    -n argo --create-namespace \
     --repo=https://argoproj.github.io/argo-helm \
     --version=7.3.4 \
     -f https://raw.githubusercontent.com/mmmarceleza/argocd/main/argocd/values.yaml
